@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <%- include('partials/header') %> <!--Escapar HTML-->
   <div class="container">
     <h1>Posts Recentes</h1>
     <ul class="posts">
@@ -22,6 +23,8 @@
         </li>
       <% }); %>
   </div>
+
+  <%- include('partials/footer') %>
 </body>
 
 </html>
