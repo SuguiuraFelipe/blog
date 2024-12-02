@@ -1,4 +1,4 @@
-let posts = []
+let posts = [{id: "1", title: 'Teste', content: 'Alguma coisa....', createdAt: new Date(), updatedAt: new Date()}]
 
 // Post {id, title, content, createdAt, updatedAt}
 const postModel = {
@@ -19,7 +19,7 @@ const postModel = {
         return post
     },
     savePost(post){
-        posts.push(post)
+        posts.unshift(post)
     },
     updatePost(id, updatedPost){
         const idex = posts.findIndex(post => post.id === id)
