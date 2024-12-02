@@ -22,7 +22,7 @@ const postModel = {
         posts.unshift(post)
     },
     updatePost(id, updatedPost){
-        const idex = posts.findIndex(post => post.id === id)
+        const index = posts.findIndex(post => post.id === id)
         posts[index] = {...posts[index], ...updatedPost, updatedAt: new Date()}
     },
     deletePost(id){
